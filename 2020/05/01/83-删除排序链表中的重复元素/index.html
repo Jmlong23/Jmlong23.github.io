@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="leetcode,链表," />
 
 
 
@@ -79,19 +79,18 @@
 
 
 
-<meta name="description" content="Typora编辑器不能正常显示解决方法 latex是markdown的扩展语法，必须要打开内联公式。首先，打开偏好设置。    选择内联公式     然后重启Typora  google浏览器不能正常显示下载相应插件： https:&#x2F;&#x2F;chrome.google.com&#x2F;webstore&#x2F;detail&#x2F;tex-all-the-things&#x2F;cbimabofgmfdkicghcadidpemeenb">
+<meta name="description" content="给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。 示例1： 12输入: 1-&gt;1-&gt;2输出: 1-&gt;2  这是一个简单的问题，仅测试你操作列表的结点指针的能力。由于输入的列表已排序，因此我们可以通过将结点的值与它之后的结点进行比较来确定它是否为重复结点。如果它是重复的，我们更改当前结点的 next 指针，以便它跳过下一个结点并直接指向下一个结点之后的结点。 1234">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于markdown文件不能正常显示数学公式的解决方案">
-<meta property="og:url" content="https://jmlong23.github.io/2020/04/28/%E5%85%B3%E4%BA%8Emarkdown%E6%96%87%E4%BB%B6%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:title" content="83.删除排序链表中的重复元素">
+<meta property="og:url" content="https://jmlong23.github.io/2020/05/01/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/index.html">
 <meta property="og:site_name" content="topLOW的博客">
-<meta property="og:description" content="Typora编辑器不能正常显示解决方法 latex是markdown的扩展语法，必须要打开内联公式。首先，打开偏好设置。    选择内联公式     然后重启Typora  google浏览器不能正常显示下载相应插件： https:&#x2F;&#x2F;chrome.google.com&#x2F;webstore&#x2F;detail&#x2F;tex-all-the-things&#x2F;cbimabofgmfdkicghcadidpemeenb">
-<meta property="og:image" content="https://jmlong23.github.io/2020/04/28/images/20200428/01.png">
-<meta property="og:image" content="https://jmlong23.github.io/2020/04/28/images/20200428/02.png">
-<meta property="article:published_time" content="2020-04-28T06:01:32.000Z">
-<meta property="article:modified_time" content="2020-04-28T06:24:46.977Z">
+<meta property="og:description" content="给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。 示例1： 12输入: 1-&gt;1-&gt;2输出: 1-&gt;2  这是一个简单的问题，仅测试你操作列表的结点指针的能力。由于输入的列表已排序，因此我们可以通过将结点的值与它之后的结点进行比较来确定它是否为重复结点。如果它是重复的，我们更改当前结点的 next 指针，以便它跳过下一个结点并直接指向下一个结点之后的结点。 1234">
+<meta property="article:published_time" content="2020-05-01T02:59:11.000Z">
+<meta property="article:modified_time" content="2020-05-01T03:43:51.698Z">
 <meta property="article:author" content="long">
+<meta property="article:tag" content="leetcode">
+<meta property="article:tag" content="链表">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://jmlong23.github.io/2020/04/28/images/20200428/01.png">
 
 
 
@@ -121,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://Jmlong23.github.io/2020/04/28/关于markdown文件不能正常显示数学公式的解决方案/"/>
+  <link rel="canonical" href="https://Jmlong23.github.io/2020/05/01/83-删除排序链表中的重复元素/"/>
 
 
 
 
 
-  <title>关于markdown文件不能正常显示数学公式的解决方案 | topLOW的博客</title>
+  <title>83.删除排序链表中的重复元素 | topLOW的博客</title>
   
 
 
@@ -254,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Jmlong23.github.io/2020/04/28/%E5%85%B3%E4%BA%8Emarkdown%E6%96%87%E4%BB%B6%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
+    <link itemprop="mainEntityOfPage" href="https://Jmlong23.github.io/2020/05/01/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="long">
@@ -271,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">关于markdown文件不能正常显示数学公式的解决方案</h1>
+          <h1 class="post-title" itemprop="name headline">83.删除排序链表中的重复元素</h1>
         
 
         <div class="post-meta">
@@ -283,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-28T14:01:32+08:00">
-                2020-04-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-01T10:59:11+08:00">
+                2020-05-01
               </time>
             
 
@@ -306,19 +305,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index">
-                    <span itemprop="name">环境搭建</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index">
-                    <span itemprop="name">博客搭建</span>
+                  <a href="/categories/leetcode/" itemprop="url" rel="index">
+                    <span itemprop="name">leetcode</span>
                   </a>
                 </span>
 
@@ -354,21 +342,23 @@
       
 
       
-        <h2 id="Typora编辑器不能正常显示解决方法"><a href="#Typora编辑器不能正常显示解决方法" class="headerlink" title="Typora编辑器不能正常显示解决方法"></a>Typora编辑器不能正常显示解决方法</h2><ol>
-<li>latex是markdown的扩展语法，必须要打开内联公式。首先，打开偏好设置。</li>
-</ol>
-<p><img src="../images/20200428/01.png" alt=""></p>
-<ol start="2">
-<li>选择内联公式</li>
-</ol>
-<img src="../images/20200428/02.png" alt="" style="zoom:60%;" />
+        <p>给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。</p>
+<p><strong>示例1：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: 1-&gt;1-&gt;2</span><br><span class="line">输出: 1-&gt;2</span><br></pre></td></tr></table></figure>
 
-<ol start="3">
-<li>然后重启Typora</li>
-</ol>
-<h2 id="google浏览器不能正常显示"><a href="#google浏览器不能正常显示" class="headerlink" title="google浏览器不能正常显示"></a>google浏览器不能正常显示</h2><p>下载相应插件：</p>
-<p><a href="https://chrome.google.com/webstore/detail/tex-all-the-things/cbimabofgmfdkicghcadidpemeenbffn" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/tex-all-the-things/cbimabofgmfdkicghcadidpemeenbffn</a></p>
-<p><a href="[https://yujunjiex.gitee.io/2018/08/16/%E7%BD%91%E9%A1%B5%E4%B8%8A%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%98%BE%E7%A4%BA%E4%B8%8D%E6%AD%A3%E7%A1%AE%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/](https://yujunjiex.gitee.io/2018/08/16/网页上数学公式显示不正确的解决方案/)">参考链接</a></p>
+<p>这是一个简单的问题，仅测试你操作列表的结点指针的能力。由于输入的列表已排序，因此我们可以通过将结点的值与它之后的结点进行比较来确定它是否为重复结点。如果它是重复的，我们更改当前结点的 next 指针，以便它跳过下一个结点并直接指向下一个结点之后的结点。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">deleteDuplicates</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        ListNode cur = head;</span><br><span class="line">        <span class="keyword">while</span>(cur != <span class="keyword">null</span> &amp;&amp; cur.next != <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(cur.val == cur.next.val)&#123;</span><br><span class="line">                cur.next = cur.next.next;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                cur = cur.next; </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> head;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>时间复杂度：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">时间复杂度：O(n)，因为列表中的每个结点都检查一次以确定它是否重复，所以总运行时间为O(n)，其中 n 是链表表中的结点数。</span><br><span class="line">空间复杂度：O(1)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p><a href="https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/solution/shan-chu-pai-xu-lian-biao-zhong-de-zhong-fu-yuan-s/" target="_blank" rel="noopener">参考链接</a></p>
 
       
     </div>
@@ -384,6 +374,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+          
+            <a href="/tags/%E9%93%BE%E8%A1%A8/" rel="tag"># 链表</a>
+          
+        </div>
+      
 
       
       
@@ -393,8 +391,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/04/28/2-4-%E6%AD%A3%E8%A7%84%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%88%B0%E6%9C%89%E9%99%90%E8%87%AA%E5%8A%A8%E6%9C%BA%E7%9A%84%E6%9E%84%E9%80%A0/" rel="next" title="2.4 正规表达式到有限自动机的构造">
-                <i class="fa fa-chevron-left"></i> 2.4 正规表达式到有限自动机的构造
+              <a href="/2020/04/28/%E5%85%B3%E4%BA%8Emarkdown%E6%96%87%E4%BB%B6%E4%B8%8D%E8%83%BD%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" rel="next" title="关于markdown文件不能正常显示数学公式的解决方案">
+                <i class="fa fa-chevron-left"></i> 关于markdown文件不能正常显示数学公式的解决方案
               </a>
             
           </div>
@@ -403,8 +401,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/05/01/83-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/" rel="prev" title="83.删除排序链表中的重复元素">
-                83.删除排序链表中的重复元素 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/05/01/Github%E5%92%8Chexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="win下Github和hexo搭建个人博客">
+                win下Github和hexo搭建个人博客 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -457,17 +455,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -543,22 +532,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Typora编辑器不能正常显示解决方法"><span class="nav-number">1.</span> <span class="nav-text">Typora编辑器不能正常显示解决方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#google浏览器不能正常显示"><span class="nav-number">2.</span> <span class="nav-text">google浏览器不能正常显示</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
